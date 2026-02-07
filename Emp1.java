@@ -20,7 +20,7 @@ static  int add(int a,int b){
 }
 public static void main(String[] args) {
     Emp1 e1=new Emp1();
-    e1.get("lalu",101);
+    e1.get("lalu",100);
     e1.show();
 
     System.out.println(cname);
