@@ -1,5 +1,3 @@
-// package mypack;
-
 class A{
 
   A(){
@@ -19,23 +17,28 @@ class B extends A{
   }
 }
 
-class C extends B{
+public class Demo2 extends B{
 
-  C(){
+  Demo2(){
 
     super(10);
+
     // this(10);
     System.out.println("C");
 
+
   }
 
-  C(int x){
+  Demo2(int x){
     super();
     System.out.println(x);
   }
 
   public static void main(String[] args) {
       //  new C ();
-       new C (12);
+       new Demo2(12);
   }
 }
+
+
+
