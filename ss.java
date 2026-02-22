@@ -19,16 +19,16 @@ class B extends A{
   }
 }
 
-class C extends B{
+public class ss extends B{
   {
-    System.out.println("c");
+    System.out.println("ss");
   }
-  C(int x){
+  ss(int x){
     System.out.println(x);
   }
 
   public static void main(String[] args){
     // new C();
-    new C(12);
+    new ss(12);
   }
 }
