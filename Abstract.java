@@ -1,4 +1,4 @@
- class Base{
+ abstract class Base{
 
   int x;
   int y;
