@@ -28,7 +28,7 @@ public class ss extends B{
   }
 
   public static void main(String[] args){
-    // new C();
-    new ss(12);
+    new C();
+    // new ss(12);
   }
 }
