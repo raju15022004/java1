@@ -13,7 +13,7 @@ public class Age{
   float si=5.5f;
 
   int t=10;
-  int s=20;
+  int s=10;
 
   char var ='h';
 
