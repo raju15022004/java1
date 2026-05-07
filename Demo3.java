@@ -30,7 +30,7 @@ public class Demo3 extends B{
   }
 
   public static void main(String[] args) {
-      // new Demo3();
-      new Demo3(12);
+      new Demo3();
+      // new Demo3(12);
   }
 }
