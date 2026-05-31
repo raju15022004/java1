@@ -21,7 +21,7 @@ public class sortorder {
   }
 
   public static void main(String[] args) {
-      String s="raju";
+      String s="raju kumar";
       sortorder(s);
   }
 
