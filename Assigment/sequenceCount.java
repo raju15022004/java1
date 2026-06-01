@@ -24,7 +24,7 @@ public class sequenceCount {
   }
 
   public static void main(String[] args) {
-      String s="raju";
+      String s="raj";
       sequenceCount(s);
   }
 
