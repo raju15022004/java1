@@ -17,7 +17,7 @@ public class Itrim {
   }
 
   public static void main(String[] args) {
-      String s="Raj";
+      String s="Raju";
       System.out.println(Itrim(s));
   }
 
