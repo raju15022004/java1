@@ -27,8 +27,8 @@ public class changecase {
   }
 
   public static void main(String[] args) {
-      String s="India";
+      String s="raju";
       System.out.println(changecase(s));
-  }
+  }System.out.println(changecase(s));
 
 }
