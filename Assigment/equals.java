@@ -21,7 +21,7 @@ public class equals {
 
   public static void main(String[] args) {
       String s1="raj";
-      String s2="raju";
+      String s2="raj";
       System.out.println(equals(s1, s2));
   }
 
