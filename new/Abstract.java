@@ -21,7 +21,7 @@ public class Abstract{
   public static void main(String[] args){
 
     child c1=new child();
-    c1.get(110, 210);
+    c1.get(100, 210);
     c1.show();
   }
 }
