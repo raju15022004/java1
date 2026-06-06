@@ -30,8 +30,8 @@ class myRegistor{
 public class Abstract1 {
 
   public static void main(String[] args){
-    child c=new child();
+    child c1=new child();
     myRegistor my=new myRegistor();
-    my.registor(c);
+    my.registor(c1);
   }
 }
