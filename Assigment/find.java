@@ -30,7 +30,7 @@ public class find {
 
   public static void main(String[] args) {
       String s1="raju";
-      String s2="raju";
+      String s2="raju Kumar";
       System.out.println(find(s1, s2));
   }
 
