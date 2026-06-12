@@ -22,7 +22,7 @@ public class frequencyCount {
   }
 
   public static void main(String[] args) {
-      String s="banana hai";
+      String s="banana ";
       frequencyCount(s);
   }
 
