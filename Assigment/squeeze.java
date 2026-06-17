@@ -20,7 +20,7 @@ public class squeeze {
   }
 
   public static void main(String[] args) {
-      String s="Raju ";
+      String s="Raju Kumar";
       System.out.println(squeeze(s));
   }
 
