@@ -22,7 +22,7 @@ public class vowelcount {
   }
 
   public static void main(String[] args) {
-      String s="Raju Kumar";
+      String s="Raju ";
       System.out.println(vowelcount(s));
   }
 
