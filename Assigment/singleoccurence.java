@@ -19,7 +19,7 @@ public class singleoccurence {
   }
 
   public static void main(String[] args) {
-      String s="rraajj";
+      String s="rraajju";
       System.out.println(singleoccurence(s));
   }
 
