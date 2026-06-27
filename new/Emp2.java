@@ -28,7 +28,7 @@ public class Emp2{
       System.out.println(e2.hashCode());
       System.out.println(e2);
 
-      e2.name="raju";
+      e2.name="raju kumar";
       System.out.println(e1.name);
   }
   
