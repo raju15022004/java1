@@ -23,7 +23,7 @@ public class alltrim {
   }
 
   public static void main(String[] args) {
-      String s="raju kumar ";
+      String s="raju  ";
       System.out.println(alltrim(s));
   }
 
