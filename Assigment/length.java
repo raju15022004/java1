@@ -15,7 +15,7 @@ public class length {
   }
 
   public static void main(String[] args) {
-      String s=" raju kumar sahani";
+      String s=" raju kumar ";
       System.out.println(length(s));
   }
 }
