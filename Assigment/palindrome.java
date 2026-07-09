@@ -22,7 +22,7 @@ public class palindrome {
   }
 
   public static void main(String[] args) {
-      String s="raju kumar";
+      String s="raju ";
       System.out.println(palindrome(s));
   }
 
