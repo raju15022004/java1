@@ -14,7 +14,7 @@ public class Person{
       // myNum=20;
       // System.out.println(myNum);
 
-      int x =5;
+      int x =6;
       int y=6;
       System.out.println(x+y);
 
