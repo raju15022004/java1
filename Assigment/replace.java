@@ -37,7 +37,7 @@ public class replace {
   public static void main(String[] args) {
       String s1="raju kumar";
       String s2="raju Kumar";
-      String s3="raj";
+      String s3="raj kumar";
 
       System.out.println(replace(s1, s2, s3));
   }

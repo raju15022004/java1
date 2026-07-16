@@ -21,7 +21,7 @@ public class emp{
       public static void main(String[] args) {
 
         emp e1=new emp();
-        e1.get("raju",500000);
+        e1.get("raju",5000000);
         e1.show();
           System.out.println( "company :"+emp.cname);
           // System.out.println("emp.cname");
