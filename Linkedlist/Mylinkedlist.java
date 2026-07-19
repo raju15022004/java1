@@ -54,7 +54,7 @@ public class Mylinkedlist{
   public static void main(String[] args) {
      linklist thelist=new linklist();
 
-     thelist.inserfirst(22);
+     thelist.inserfirst(20);
      thelist.inserfirst(44);
      thelist.inserfirst(66);
      thelist.inserfirst(88);
