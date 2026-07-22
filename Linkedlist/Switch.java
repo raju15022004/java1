@@ -1,7 +1,7 @@
 class Switch {
 
   public static void main(String[] args) {
-      String day="SAT";
+      String day="SUN";
       switch(day){
 
         case "MON":
