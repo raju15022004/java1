@@ -7,7 +7,7 @@ class Hash{
       System.out.println(al.size());
       al.add("a");
       al.add("b");
-      al.add("d");
+      al.add("c");
       System.out.println(al.add("c"));
       System.out.println(al.size());
       System.out.println(al);
