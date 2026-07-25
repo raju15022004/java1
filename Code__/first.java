@@ -1,0 +1,11 @@
+public class first{
+
+  public static void main(String[] args) {
+      byte b=5;
+      short s=10;
+      int i=4000;
+      long l=10000;
+
+      System.out.println("Integer value -->" + b + " ,"+s+" , " +i+" , "+l);
+  }
+}
