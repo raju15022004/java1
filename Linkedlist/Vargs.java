@@ -8,7 +8,7 @@
   }
   public static void main(String[] args) {
       int z1[]={20,20,20,20};
-      new Vargs().show(100, 10,10,10,10);
+      new Vargs().show(10, 10,10,10,10);
       new Vargs().show(100, z1);
   }
 
