@@ -1,7 +1,7 @@
 // package Array;
 
 public class first {
-  public static void main(String[] args) {
+  public static void main(String1[] args) {
       int[] rollNums=new int[3];
 
       // rollNums[0]=101;

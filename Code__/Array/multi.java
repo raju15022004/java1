@@ -1,7 +1,7 @@
 // package Array;
 
 public class multi {
-  public static void main(String[] args){
+  public static void main(String1[] args){
 
     //  int [][] marks=new int[3][3];
     //  marks[0][0]=20;
@@ -24,29 +24,52 @@ public class multi {
     //  }
 
 
-    int[][] marks=new int[3][];
+    // int[][] marks=new int[3][];
 
-    marks[0]=new int[1];
-    marks[1]=new int[2];
-    marks[2]=new int[3];
+    // marks[0]=new int[1];
+    // marks[1]=new int[2];
+    // marks[2]=new int[3];
 
-    marks[0][0]=23;
+    // marks[0][0]=23;
 
-    marks[1][0]=24;
-    marks[1][1]=90;
+    // marks[1][0]=24;
+    // marks[1][1]=90;
 
-    marks[2][0]=12;
-    marks[2][1]=78;
-    marks[2][2]=45;
+    // marks[2][0]=12;
+    // marks[2][1]=78;
+    // marks[2][2]=45;
+
+    // for(int row=0; row<marks.length; row++){
+    //   for(int col=0; col<marks[row].length;col++){
+    //     System.out.print(marks[row][col] +" ");
+    //   }
+
+    //   System.out.println();
+    // }
+
+
+    // 1-D Array
+
+    // int[] rollNums={101,102,103};
+
+    // for(int i=0; i<rollNums.length; i++){
+    //   System.out.println(rollNums[i]);
+    // }
+
+    // 2-D Array
+
+    int[][] marks={
+      {12,14,56},
+      {34,45,67},
+      {45,67,78}
+    };
 
     for(int row=0; row<marks.length; row++){
       for(int col=0; col<marks[row].length;col++){
         System.out.print(marks[row][col] +" ");
       }
-
       System.out.println();
     }
-
   }
 
 }
