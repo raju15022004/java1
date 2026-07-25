@@ -2,8 +2,15 @@ public class function{
 
   public static void main(String[] args) {
 
-    // greet();
+    greet();
     sayHello("raju");
+
+    // int x=getNumber();
+    // System.out.println(x);
+
+    System.out.println(getNumber());
+
+    System.out.println(multiply(2, 4));
 
   }
 
