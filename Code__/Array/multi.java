@@ -61,7 +61,7 @@ public class multi {
     int[][] marks={
       {12,14,56},
       {34,45,67},
-      {45,67,78}
+      {65,67,78}
     };
 
     for(int row=0; row<marks.length; row++){

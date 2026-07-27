@@ -28,7 +28,7 @@ public class function{
 
   // No ip,Op
   static int getNumber() {
-   return 10;
+   return 20;
   }
 
   // Ip,Op
