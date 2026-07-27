@@ -11,7 +11,7 @@ public class Equal {
     Week day1,day2,day3;
     day1=Week.Monday;
     day2=Week.Monday;
-    day3=Week.Tuesday;
+    day3=Week.Friday;
 
     if(day1.equals(day2))
       System.out.println("Error");
