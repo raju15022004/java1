@@ -6,7 +6,7 @@ public class private1 {
 
     BankAccount ba =new BankAccount();
     ba.deposit(500);
-    ba.withdraw(800);
+    ba.withdraw(500);
 
     System.out.println(ba.getBalance());
 
