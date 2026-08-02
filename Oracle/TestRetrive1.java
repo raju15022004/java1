@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class TestRetrive {
+public class TestRetrive1 {
 
     public static void main(String[] args) {
 
@@ -21,16 +21,18 @@ public class TestRetrive {
 
             Statement s = c.createStatement();
 
-            ResultSet resultSet = s.executeQuery("SELECT * FROM employee");
+            ResultSet rs = s.executeQuery("SELECT * FROM student");
 
-while (resultSet.next()) {
+while (rs.next()) {
     System.out.println(
-        resultSet.getInt(1) + " = " +
-        resultSet.getString(2)
+        rs.getInt("sid") + " " +
+        rs.getString("sname") + " " +
+        rs.getInt("age") + " " +
+        rs.getString("course")
     );
 }
 
-            resultSet.close();
+            rs.close();
             s.close();
             c.close();
 
