@@ -56,7 +56,7 @@ public static void main(String[] args) {
 
     // logical operator///////////////////
 
-    int a=5;
+    int a=10;
     int b=10;
     int c=15;
 
