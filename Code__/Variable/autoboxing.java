@@ -9,6 +9,12 @@ public class autoboxing {
 
     System.out.println(x);
     System.out.println(y);
+
+    Integer a=Integer.valueOf(20);
+    int b=a;
+
+    System.out.println(a);
+    System.out.println(b);
   }
 
 }
