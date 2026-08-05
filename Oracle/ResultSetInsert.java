@@ -1,11 +1,12 @@
 
+
 // import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-public class Myupdatetable1 {
+public class ResultSetInsert {
 
   public static void main(String[] args) {
 
@@ -22,19 +23,26 @@ public class Myupdatetable1 {
 
     st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
    rs = st.executeQuery("SELECT acc_no, balance FROM bank1");
-    
 
-    while (rs.next()) {
-
-    System.out.println(rs.getInt(1) + " " + rs.getDouble(2));
-
-    if (rs.getInt(1) == 101) {
-        rs.updateDouble(2, 20000);
-        rs.updateRow();
-        System.out.println("Record Updated!!!");
+    while(rs.next()){
+      System.out.println(rs.getInt(1)+"=");
+      System.out.println(rs.getInt(2));
+      System.out.println("");
     }
-}
+    rs.moveToInsertRow();
+    rs.updateInt(1, 1007);
+    rs.updateInt(2, 2000);
+    rs.insertRow();
 
+    rs.beforeFirst();
+    rs=st.executeQuery("SELECT acc_no, balance FROM bank1");
+    System.out.println("after insertion of new Record");
+
+    while(rs.next()){
+      System.out.println(rs.getInt(1)+"=");
+      System.out.println(rs.getInt(2));
+      System.out.println("   ");
+    }
     }catch(Exception e){
 
       System.out.println(e);
@@ -42,4 +50,3 @@ public class Myupdatetable1 {
   }
 
 }
-

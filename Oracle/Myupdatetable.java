@@ -11,7 +11,7 @@ public class Myupdatetable {
 
     Statement st=null;
     ResultSet rs=null;
-    
+
 
 
     try {
@@ -24,7 +24,7 @@ public class Myupdatetable {
     rs = st.executeQuery("SELECT id, balance FROM Bank");
 
     rs.next();
-    // rs.deleteRow();
+    rs.deleteRow();
     System.out.println("record deleted");
     }catch(Exception e){
 
