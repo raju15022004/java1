@@ -63,7 +63,7 @@ public class Generics1{
 
 class Dog extends Animal{
   void bark(){
-    System.out.println("Dog is ");
+    System.out.println("Dog is barking ");
   }
 }
 
