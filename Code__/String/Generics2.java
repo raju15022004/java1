@@ -1,9 +1,27 @@
 public class Generics2{
 
   public static void main(String[] args) {
-    Animal animal=new Animal();
-    animal.eat();
-    animal.walk();
+    // Animal animal=new Animal();
+    // animal.eat();
+    // animal.walk();
+
+    Dog[] dogs=new Dog[10];
+    Animal[] animals=dogs;
+
+    animals[0]=new Dog();
+    animals[1]=new Dog();
+    animals[2]=new Dog();
+    animals[3]=new Dog();
+    animals[4]=new Dog();
+
+    for(Animal animal:animals){
+
+      if(animal == null){
+        continue;
+      }
+
+      animal.eat();
+    }
 
   }
 }
@@ -18,7 +36,7 @@ class Animal{
 
 }
 
-class dog extends Animal{
+class Dog extends Animal{
   void bark(){
     System.out.println("Barking");
   }
