@@ -1,29 +1,27 @@
 
 import java.awt.Scrollbar;
+import java.awt.event.AdjustmentEvent;
 import java.awt.event.AdjustmentListener;
-import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-
-import javax.naming.spi.DirStateFactory;
+import java.sql.Statement;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
-import javax.swing.Scrollable;
 
 public class RecordScroll extends JFrame implements AdjustmentListener {
 
   Connection cn;
   Statement st;
-  Scrollable bar;
+  Scrollbar bar;
 
   JLabel [] la=new JLabel[4];
   JTextField [] tb=new JTextField[4];
   ResultSet rst;
   JLabel rv;
   int nor=0;
-  public RacordScroll(){
+  public RecordScroll(){
 
     setSize(400,400);
     setResizable(true);
@@ -41,7 +39,10 @@ public class RecordScroll extends JFrame implements AdjustmentListener {
     }
     try{
        Class.forName("com.mysql.cj.jdbc.Driver");
-     Connection c=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/emp?user=root&password=@$Raju@678");
+
+      cn=DriverManager.getConnection(
+          "jdbc:mysql://127.0.0.1:3306/emp?user=root&password=@$Raju@678");
+
 
       st=cn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
       rst=st.executeQuery("select * from Student");
@@ -52,11 +53,34 @@ public class RecordScroll extends JFrame implements AdjustmentListener {
     catch(Exception ex){
       System.out.println(ex);
     }
-    bar=new Scrollbar(Scrollbar.HORIZONTAL,0,1,0,nor);
+   bar=new Scrollbar(Scrollbar.HORIZONTAL,0,1,0,nor);
     bar.setBounds(100,300,200,30);
     add(bar);
+
     bar.addAdjustmentListener(this);
-    rv=new JLabel()
+    rv=new JLabel();
+    rv.setBounds(100,270,60,30);
+    add(rv);
+    showRecord(1);
+    setVisible(true);
+
+  }
+  void showRecord(int rn){
+    try {
+      rst.absolute(rn);
+      for(int i=0;i<4;i++)
+        tb[i].setText(rst.getString(i+1));
+
+    } catch (Exception ex) {
+      System.out.println(ex);
+    }
+    rv.setText(rn+"/"+nor);
+  }
+  public void adjustmentValueChanged(AdjustmentEvent e){
+    showRecord(e.getValue()+1);
+  }
+  public static void main(String[] args) {
+      new RecordScroll();
   }
 
 
