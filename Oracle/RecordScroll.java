@@ -1,0 +1,63 @@
+
+import java.awt.Scrollbar;
+import java.awt.event.AdjustmentListener;
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+
+import javax.naming.spi.DirStateFactory;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.Scrollable;
+
+public class RecordScroll extends JFrame implements AdjustmentListener {
+
+  Connection cn;
+  Statement st;
+  Scrollable bar;
+
+  JLabel [] la=new JLabel[4];
+  JTextField [] tb=new JTextField[4];
+  ResultSet rst;
+  JLabel rv;
+  int nor=0;
+  public RacordScroll(){
+
+    setSize(400,400);
+    setResizable(true);
+    setLayout(null);
+    String [] str={"Sid","Name","City","Age"};
+    int y=50;
+    for(int i=0;i<la.length;i++){
+      la[i]=new JLabel(str[i]);
+      la[i].setBounds(100,y,90,27);
+      add(la[i]);
+      tb[i]=new JTextField();
+      tb[i].setBounds(200,y,150,27);
+      add(tb[i]);
+      y+=60;
+    }
+    try{
+       Class.forName("com.mysql.cj.jdbc.Driver");
+     Connection c=DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/emp?user=root&password=@$Raju@678");
+
+      st=cn.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
+      rst=st.executeQuery("select * from Student");
+      while(rst.next())
+        nor++;
+
+    }
+    catch(Exception ex){
+      System.out.println(ex);
+    }
+    bar=new Scrollbar(Scrollbar.HORIZONTAL,0,1,0,nor);
+    bar.setBounds(100,300,200,30);
+    add(bar);
+    bar.addAdjustmentListener(this);
+    rv=new JLabel()
+  }
+
+
+}
