@@ -19,10 +19,10 @@ public class Hashmap1 {
     // System.out.println(map.containsValue("Rahul"));
 
     // map.remove(103);
-    // map.get(102);
+    map.get(103);
     // map.size();
     // map.isEmpty();
-    map.clear();
+    // map.clear();
     System.out.println(map);
   }
 
