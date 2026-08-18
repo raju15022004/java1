@@ -12,6 +12,12 @@ public class tree1{
     set.add(80);
     set.add(50);
 
-    System.out.println(set.first());
+    // System.out.println(set.first());
+
+
+    //Navigable Set
+
+    System.out.println(set.lower(10));
+    System.out.println(set.floor(10));
   }
 }
