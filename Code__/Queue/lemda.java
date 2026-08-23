@@ -1,7 +1,7 @@
 public class lemda {
   public static void main(String[] args){
     Calculator c=new Addition();
-    int sum=c.Calculator(5, 6);
+    int sum=c.Calculator(5, 7);
 
     System.out.println(sum);
 
