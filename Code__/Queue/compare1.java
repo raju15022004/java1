@@ -3,7 +3,7 @@ import java.util.TreeSet;
 public class compare1 {
   public static void main(String[] args) {
 
-    Student s1=new Student("raju", 60);
+    Student s1=new Student("raju", 6);
     Student s2=new Student("Rohit", 60);
 
     TreeSet<Student> set =new TreeSet<>();
