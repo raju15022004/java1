@@ -26,7 +26,7 @@ public class demo {
       pq2.add(20);
       pq2.add(30);
       pq2.add(40);
-      pq2.add(50);
+      pq2.add(60);
 
       System.out.println(pq2.poll());
       System.out.println(pq2.poll());
