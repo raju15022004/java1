@@ -5,9 +5,17 @@ public class race {
 
     Counter c1=new Counter();
 
-    Thread t1=new Thread(()-> c1.increament());
+    Thread t1=new Thread(()-> {
+      for(int i=1;i<=10000;i++){
+        c1.increament();
+      }
+    });
 
-    Thread t2=new Thread(()-> c1.increament());
+    Thread t2=new Thread(()->{
+      for(int i=1;i<=10000;i++){
+        c1.increament();
+      }
+    });
 
     t1.start();
     t2.start();
@@ -15,7 +23,7 @@ public class race {
     t1.join();
     t2.join();
 
-    System.out.println(c1.count);
+    System.out.println(c1.count );
 
   }
 
@@ -24,7 +32,7 @@ public class race {
 class Counter{
   public int count=0;
 
-  void increament(){
+  synchronized void increament(){
     count++;
   }
 }
