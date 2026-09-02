@@ -3,7 +3,7 @@ public class seat {
     SeatBooking sb=new SeatBooking();
 
     Thread t1=new Thread(()-> sb.bookSeat("Raju"));
-    Thread t2=new Thread(()-> sb.bookSeat("Raju"));
+    Thread t2=new Thread(()-> sb.bookSeat("Raju kumar"));
 
     t1.start();
     t2.start();
