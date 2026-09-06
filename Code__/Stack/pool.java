@@ -15,7 +15,7 @@ public class pool {
           System.out.println("Task"+ taskId +"is perfromed by" +Thread.currentThread().getName());
 
           try {
-               Thread.sleep(200);
+               Thread.sleep(2000);
           } catch (Exception e) {
           }
         });
