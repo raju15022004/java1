@@ -12,7 +12,7 @@ public class comp {
       //             .thenAccept(result -> System.out.println(result));
 
        CompletableFuture<Void> f1=
-                  CompletableFuture.supplyAsync(()->100)
+                  CompletableFuture.supplyAsync(()->10)
                   .thenRun(() -> System.out.println("Done"));
 
                   // try {
