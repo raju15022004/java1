@@ -12,7 +12,7 @@ public class flag{
     });
 
     Thread t2=new Thread(()->{
-      for(int i=1;i<=10;i++){
+      for(int i=1;i<=20;i++){
         try{
           Thread.sleep(100);
         }catch(Exception e){}
