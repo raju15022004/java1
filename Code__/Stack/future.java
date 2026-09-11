@@ -9,7 +9,7 @@ public class future {
 
     ExecutorService executor=Executors.newFixedThreadPool(2);
 
-    Future<Integer> f1=executor.submit(()-> 10);
+    Future<Integer> f1=executor.submit(()-> 20);
 
     try {
         System.out.println(f1.get());
