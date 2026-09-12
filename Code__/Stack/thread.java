@@ -8,6 +8,6 @@ public class thread{
 class MyThread extends Thread{
   @Override
   public void run(){
-    System.out.println("Thread is ");
+    System.out.println("Thread is ffff");
   }
 }
