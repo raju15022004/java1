@@ -1,0 +1,24 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>I18nServlet</servlet-name>
+        <servlet-class>I18nServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>I18nServlet</servlet-name>
+        <url-pattern>/i18n</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+</web-app>
