@@ -20,6 +20,6 @@ class Person{
 class Guest extends Person{
   @Override
   void introduce(){
-    System.out.println("Hi,I am a Guest");
+    System.out.println("Hi,I am a ");
   }
 }
