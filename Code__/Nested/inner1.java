@@ -27,7 +27,7 @@ class Outer{
     }
 
     static void fun2(){
-      System.out.println("hello word");
+      System.out.println("hello ");
     }
   }
 }
