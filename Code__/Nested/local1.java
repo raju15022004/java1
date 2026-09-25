@@ -11,7 +11,7 @@ class Outer{
   void greet(){
     class local{
       void sayHello(){
-        System.out.println("hello");
+        System.out.println("hello word");
       }
     }
 
