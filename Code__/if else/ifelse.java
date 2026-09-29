@@ -41,7 +41,7 @@ public class ifelse {
       //   System.out.println("i is 9");
       //  }
 
-      int age=70;
+      int age=60;
 
       if(age > 80){
         System.out.println("you are very old");
