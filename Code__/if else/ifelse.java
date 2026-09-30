@@ -52,7 +52,7 @@ public class ifelse {
       else if(age > 40){
         System.out.println("you are becoming old");
       }
-      else if(age > 20){
+      else if(age > 10){
         System.out.println("you are young");
       }
       else{
