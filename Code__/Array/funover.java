@@ -1,7 +1,7 @@
 public class funover {
   public static void main(String[] args) {
 
-    int x=sum(8,7);
+    int x=sum(9,4);
     System.out.println(x);
   }
 
