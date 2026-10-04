@@ -2,7 +2,7 @@
 
 public class call {
   static void change(int x) {
-    x=100;
+    x=80;
     System.out.println("Inside Method:"+x);
 
   }
