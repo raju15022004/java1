@@ -1,7 +1,7 @@
 // package java.ENUM;
 
 enum myCars{
-  HONDA,BMW,LANDROVER
+  HONDA,BMW,LANDROVER,maruti
 };
 
 public class enum1 {
