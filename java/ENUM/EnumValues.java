@@ -1,7 +1,7 @@
 // package java.ENUM;
 
 enum Week{
-  Monday,Tuesday,Wednesday,Thursday,Friday,Satursday,Sunday
+  Monday,Tuesday,Wednesday,Thursday,Friday,Satursday
 }
 
 public class EnumValues {
