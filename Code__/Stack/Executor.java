@@ -5,7 +5,7 @@ public class Executor{
 
   public static void main(String[] args) {
 
-    ExecutorService executor=Executors.newFixedThreadPool(2);
+    ExecutorService executor=Executors.newFixedThreadPool(4);
 
     for(int i=1; i<5; i++){
 
