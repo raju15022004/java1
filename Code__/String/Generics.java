@@ -15,7 +15,7 @@ public class Generics {
     String s=(String) b2.getValue();
     Boolean b=(Boolean) b3.getValue();
 
-    System.out.println(x + 5);
+    System.out.println(x + 6);
     System.out.println(s + 5);
     System.out.println(b);
 
